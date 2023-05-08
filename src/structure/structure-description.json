@@ -1,0 +1,3514 @@
+[
+  {
+    "name": "Page",
+    "refs": ["page"],
+    "cols": [
+      { "name": "RelativeUrl", "refs": ["relative url"], "type": "text" },
+      {
+        "name": "CreatedByUserName",
+        "refs": ["created by user name"],
+        "type": "text"
+      },
+      {
+        "name": "ModifiedByUserName",
+        "refs": ["modified by user name"],
+        "type": "text"
+      },
+      { "name": "CreatedOn", "refs": ["created on"], "type": "date" },
+      { "name": "ModifiedOn", "refs": ["modified on"], "type": "date" },
+      {
+        "name": "PageMetaValues",
+        "refs": ["page meta values"],
+        "type": "collections"
+      }
+    ]
+  },
+  {
+    "name": "PageMetaValue",
+    "refs": ["page meta value"],
+    "cols": [
+      { "name": "Value", "refs": ["value"], "type": "text" },
+      {
+        "name": "CreatedByUserName",
+        "refs": ["created by user name"],
+        "type": "text"
+      },
+      {
+        "name": "ModifiedByUserName",
+        "refs": ["modified by user name"],
+        "type": "text"
+      },
+      { "name": "CreatedOn", "refs": ["created on"], "type": "date" },
+      { "name": "ModifiedOn", "refs": ["modified on"], "type": "date" },
+      {
+        "name": "Page.RelativeUrl",
+        "refs": ["relative url of page"],
+        "type": "text"
+      },
+      {
+        "name": "Page.CreatedByUserName",
+        "refs": ["created by user name of page"],
+        "type": "text"
+      },
+      {
+        "name": "Page.ModifiedByUserName",
+        "refs": ["modified by user name of page"],
+        "type": "text"
+      },
+      {
+        "name": "Page.CreatedOn",
+        "refs": ["created on of page"],
+        "type": "date"
+      },
+      {
+        "name": "Page.ModifiedOn",
+        "refs": ["modified on of page"],
+        "type": "date"
+      },
+      {
+        "name": "Page.PageMetaValues",
+        "refs": ["page meta values of page"],
+        "type": "collections"
+      },
+      { "name": "MetaKey.Name", "refs": ["name of meta key"], "type": "text" },
+      {
+        "name": "MetaKey.CreatedByUserName",
+        "refs": ["created by user name of meta key"],
+        "type": "text"
+      },
+      {
+        "name": "MetaKey.ModifiedByUserName",
+        "refs": ["modified by user name of meta key"],
+        "type": "text"
+      },
+      {
+        "name": "MetaKey.CreatedOn",
+        "refs": ["created on of meta key"],
+        "type": "date"
+      },
+      {
+        "name": "MetaKey.ModifiedOn",
+        "refs": ["modified on of meta key"],
+        "type": "date"
+      },
+      {
+        "name": "MetaKey.PageMetaValues",
+        "refs": ["page meta values of meta key"],
+        "type": "collections"
+      }
+    ]
+  },
+  {
+    "name": "Organiser",
+    "refs": ["organiser"],
+    "cols": [
+      { "name": "IsVerified", "refs": ["is verified"], "type": "bool" },
+      { "name": "Name", "refs": ["name"], "type": "text" },
+      { "name": "Description", "refs": ["description"], "type": "text" },
+      { "name": "Code", "refs": ["code"], "type": "text" },
+      { "name": "Link", "refs": ["link"], "type": "text" },
+      {
+        "name": "CreatedByUserName",
+        "refs": ["created by user name"],
+        "type": "text"
+      },
+      {
+        "name": "ModifiedByUserName",
+        "refs": ["modified by user name"],
+        "type": "text"
+      },
+      { "name": "EventsCount", "refs": ["events count"], "type": "number" },
+      {
+        "name": "TotalSalesAmount",
+        "refs": ["total sales amount", "total sales amount, base currency"],
+        "type": "number"
+      },
+      {
+        "name": "TotalSoldTicketsCount",
+        "refs": ["sold tickets count", "total sold tickets count"],
+        "type": "number"
+      },
+      { "name": "CreatedOn", "refs": ["created on"], "type": "date" },
+      { "name": "ModifiedOn", "refs": ["modified on"], "type": "date" },
+      {
+        "name": "Events",
+        "refs": ["experiences", "events"],
+        "type": "collections"
+      },
+      {
+        "name": "Contact.FirstName",
+        "refs": ["first name of contact"],
+        "type": "text"
+      },
+      {
+        "name": "Contact.LastName",
+        "refs": ["last name of contact"],
+        "type": "text"
+      },
+      {
+        "name": "Contact.PhoneNumber",
+        "refs": ["phone number of contact"],
+        "type": "text"
+      },
+      { "name": "Contact.Email", "refs": ["email of contact"], "type": "text" },
+      {
+        "name": "Contact.CreatedByUserName",
+        "refs": ["created by user name of contact"],
+        "type": "text"
+      },
+      {
+        "name": "Contact.ModifiedByUserName",
+        "refs": ["modified by user name of contact"],
+        "type": "text"
+      },
+      {
+        "name": "Contact.CreatedOn",
+        "refs": ["created on of contact"],
+        "type": "date"
+      },
+      {
+        "name": "Contact.ModifiedOn",
+        "refs": ["modified on of contact"],
+        "type": "date"
+      },
+      {
+        "name": "Contact.Organisers",
+        "refs": ["organisers of contact"],
+        "type": "collections"
+      },
+      {
+        "name": "Contact.Orders",
+        "refs": ["orders of contact"],
+        "type": "collections"
+      }
+    ]
+  },
+  {
+    "name": "DeliveryType",
+    "refs": ["delivery type"],
+    "cols": [
+      { "name": "Name", "refs": ["name"], "type": "text" },
+      { "name": "Subtitle", "refs": ["subtitle"], "type": "text" },
+      {
+        "name": "CreatedByUserName",
+        "refs": ["created by user name"],
+        "type": "text"
+      },
+      {
+        "name": "ModifiedByUserName",
+        "refs": ["modified by user name"],
+        "type": "text"
+      },
+      {
+        "name": "FeeAmount",
+        "refs": ["fee amount, base currency", "fee amount"],
+        "type": "number"
+      },
+      { "name": "FeePercent", "refs": ["fee percent"], "type": "number" },
+      { "name": "CreatedOn", "refs": ["created on"], "type": "date" },
+      { "name": "ModifiedOn", "refs": ["modified on"], "type": "date" },
+      { "name": "Orders", "refs": ["orders"], "type": "collections" }
+    ]
+  },
+  {
+    "name": "Order",
+    "refs": ["order"],
+    "cols": [
+      {
+        "name": "CreatedByUserName",
+        "refs": ["created by user name"],
+        "type": "text"
+      },
+      {
+        "name": "ModifiedByUserName",
+        "refs": ["modified by user name"],
+        "type": "text"
+      },
+      { "name": "Number", "refs": ["number"], "type": "number" },
+      {
+        "name": "TotalAmount",
+        "refs": ["total amount, base currency", "total amount"],
+        "type": "number"
+      },
+      {
+        "name": "TaxAmount",
+        "refs": ["tax amount", "tax amount, base currency"],
+        "type": "number"
+      },
+      {
+        "name": "DeliveryAmount",
+        "refs": ["delivery amount", "delivery amount, base currency"],
+        "type": "number"
+      },
+      {
+        "name": "PaymentAmount",
+        "refs": ["payment amount, base currency", "payment amount"],
+        "type": "number"
+      },
+      { "name": "CreatedOn", "refs": ["created on"], "type": "date" },
+      { "name": "ModifiedOn", "refs": ["modified on"], "type": "date" },
+      { "name": "Tickets", "refs": ["tickets"], "type": "collections" },
+      {
+        "name": "Contact.FirstName",
+        "refs": ["first name of contact"],
+        "type": "text"
+      },
+      {
+        "name": "Contact.LastName",
+        "refs": ["last name of contact"],
+        "type": "text"
+      },
+      {
+        "name": "Contact.PhoneNumber",
+        "refs": ["phone number of contact"],
+        "type": "text"
+      },
+      { "name": "Contact.Email", "refs": ["email of contact"], "type": "text" },
+      {
+        "name": "Contact.CreatedByUserName",
+        "refs": ["created by user name of contact"],
+        "type": "text"
+      },
+      {
+        "name": "Contact.ModifiedByUserName",
+        "refs": ["modified by user name of contact"],
+        "type": "text"
+      },
+      {
+        "name": "Contact.CreatedOn",
+        "refs": ["created on of contact"],
+        "type": "date"
+      },
+      {
+        "name": "Contact.ModifiedOn",
+        "refs": ["modified on of contact"],
+        "type": "date"
+      },
+      {
+        "name": "Contact.Organisers",
+        "refs": ["organisers of contact"],
+        "type": "collections"
+      },
+      {
+        "name": "Contact.Orders",
+        "refs": ["orders of contact"],
+        "type": "collections"
+      },
+      {
+        "name": "DeliveryType.Name",
+        "refs": ["name of delivery type"],
+        "type": "text"
+      },
+      {
+        "name": "DeliveryType.Subtitle",
+        "refs": ["subtitle of delivery type"],
+        "type": "text"
+      },
+      {
+        "name": "DeliveryType.CreatedByUserName",
+        "refs": ["created by user name of delivery type"],
+        "type": "text"
+      },
+      {
+        "name": "DeliveryType.ModifiedByUserName",
+        "refs": ["modified by user name of delivery type"],
+        "type": "text"
+      },
+      {
+        "name": "DeliveryType.FeeAmount",
+        "refs": ["fee amount, base currency of delivery type"],
+        "type": "number"
+      },
+      {
+        "name": "DeliveryType.FeePercent",
+        "refs": ["fee percent of delivery type"],
+        "type": "number"
+      },
+      {
+        "name": "DeliveryType.CreatedOn",
+        "refs": ["created on of delivery type"],
+        "type": "date"
+      },
+      {
+        "name": "DeliveryType.ModifiedOn",
+        "refs": ["modified on of delivery type"],
+        "type": "date"
+      },
+      {
+        "name": "DeliveryType.Orders",
+        "refs": ["orders of delivery type"],
+        "type": "collections"
+      },
+      {
+        "name": "Status.Name",
+        "refs": ["name of order status"],
+        "type": "text"
+      },
+      {
+        "name": "Status.CreatedByUserName",
+        "refs": ["created by user name of order status"],
+        "type": "text"
+      },
+      {
+        "name": "Status.ModifiedByUserName",
+        "refs": ["modified by user name of order status"],
+        "type": "text"
+      },
+      {
+        "name": "Status.CreatedOn",
+        "refs": ["created on of order status"],
+        "type": "date"
+      },
+      {
+        "name": "Status.ModifiedOn",
+        "refs": ["modified on of order status"],
+        "type": "date"
+      },
+      {
+        "name": "Status.Orders",
+        "refs": ["orders of order status"],
+        "type": "collections"
+      }
+    ]
+  },
+  {
+    "name": "OrderStatus",
+    "refs": ["order status"],
+    "cols": [
+      { "name": "Name", "refs": ["name"], "type": "text" },
+      {
+        "name": "CreatedByUserName",
+        "refs": ["created by user name"],
+        "type": "text"
+      },
+      {
+        "name": "ModifiedByUserName",
+        "refs": ["modified by user name"],
+        "type": "text"
+      },
+      { "name": "CreatedOn", "refs": ["created on"], "type": "date" },
+      { "name": "ModifiedOn", "refs": ["modified on"], "type": "date" },
+      { "name": "Orders", "refs": ["orders"], "type": "collections" }
+    ]
+  },
+  {
+    "name": "Ticket",
+    "refs": ["ticket"],
+    "cols": [
+      { "name": "IsInside", "refs": ["is inside"], "type": "bool" },
+      {
+        "name": "TicketTitle",
+        "refs": ["ticket title", "title"],
+        "type": "text"
+      },
+      { "name": "Code", "refs": ["code"], "type": "text" },
+      {
+        "name": "CreatedByUserName",
+        "refs": ["created by user name"],
+        "type": "text"
+      },
+      {
+        "name": "ModifiedByUserName",
+        "refs": ["modified by user name"],
+        "type": "text"
+      },
+      {
+        "name": "Price",
+        "refs": ["price", "price, base currency"],
+        "type": "number"
+      },
+      { "name": "StartDate", "refs": ["start date"], "type": "date" },
+      { "name": "CreatedOn", "refs": ["created on"], "type": "date" },
+      { "name": "ModifiedOn", "refs": ["modified on"], "type": "date" },
+      {
+        "name": "TicketScanLogs",
+        "refs": ["ticket scan logs"],
+        "type": "collections"
+      },
+      {
+        "name": "Event.IsActive",
+        "refs": ["is visible on site of experience", "is active of event"],
+        "type": "bool"
+      },
+      {
+        "name": "Event.Title",
+        "refs": ["title of experience"],
+        "type": "text"
+      },
+      { "name": "Event.Code", "refs": ["code of experience"], "type": "text" },
+      {
+        "name": "Event.Description",
+        "refs": ["description of experience"],
+        "type": "text"
+      },
+      { "name": "Event.Link", "refs": ["link of experience"], "type": "text" },
+      {
+        "name": "Event.LocationTitle",
+        "refs": ["location title of experience"],
+        "type": "text"
+      },
+      {
+        "name": "Event.CreatedByUserName",
+        "refs": ["created by user name of experience"],
+        "type": "text"
+      },
+      {
+        "name": "Event.ModifiedByUserName",
+        "refs": ["modified by user name of experience"],
+        "type": "text"
+      },
+      {
+        "name": "Event.MinPrice",
+        "refs": [
+          "min price, base currency of experience",
+          "min price of event"
+        ],
+        "type": "number"
+      },
+      {
+        "name": "Event.MaxPrice",
+        "refs": [
+          "max price, base currency of experience",
+          "max price of event"
+        ],
+        "type": "number"
+      },
+      {
+        "name": "Event.LikesCount",
+        "refs": ["likes count of experience"],
+        "type": "number"
+      },
+      {
+        "name": "Event.TotalTicketsCount",
+        "refs": ["total tickets count of experience"],
+        "type": "number"
+      },
+      {
+        "name": "Event.SoldTicketsCount",
+        "refs": ["sold tickets count of experience"],
+        "type": "number"
+      },
+      {
+        "name": "Event.SoldTicketsAmount",
+        "refs": [
+          "sold tickets amount of experience",
+          "sold tickets amount, base currency of event"
+        ],
+        "type": "number"
+      },
+      {
+        "name": "Event.StartDate",
+        "refs": ["start date of experience"],
+        "type": "date"
+      },
+      {
+        "name": "Event.EndDate",
+        "refs": ["end date of experience"],
+        "type": "date"
+      },
+      {
+        "name": "Event.CreatedOn",
+        "refs": ["created on of experience"],
+        "type": "date"
+      },
+      {
+        "name": "Event.ModifiedOn",
+        "refs": ["modified on of experience"],
+        "type": "date"
+      },
+      {
+        "name": "Event.EventImages",
+        "refs": ["experience images of experience", "event images of event"],
+        "type": "collections"
+      },
+      {
+        "name": "Event.EventInCategories",
+        "refs": [
+          "experience in categories of experience",
+          "event in categories of event"
+        ],
+        "type": "collections"
+      },
+      {
+        "name": "Event.EventFlags",
+        "refs": ["event flags of experience", "experience flags of event"],
+        "type": "collections"
+      },
+      {
+        "name": "Event.FavouriteEvents",
+        "refs": ["favourite events of experience"],
+        "type": "collections"
+      },
+      {
+        "name": "Event.EventReviews",
+        "refs": ["event reviews of experience", "experience reviews of event"],
+        "type": "collections"
+      },
+      {
+        "name": "Event.EventMetaValues",
+        "refs": [
+          "event meta values of experience",
+          "experience meta values of event"
+        ],
+        "type": "collections"
+      },
+      {
+        "name": "Event.Dates",
+        "refs": ["dates of experience"],
+        "type": "collections"
+      },
+      {
+        "name": "EventPlace.IsFeesAbsorbed",
+        "refs": [
+          "absorb fees: fees are deducted from your hucket revenue of event place",
+          "is fees absorbed of experience place"
+        ],
+        "type": "bool"
+      },
+      {
+        "name": "EventPlace.Title",
+        "refs": ["title of event place"],
+        "type": "text"
+      },
+      {
+        "name": "EventPlace.CreatedByUserName",
+        "refs": ["created by user name of event place"],
+        "type": "text"
+      },
+      {
+        "name": "EventPlace.ModifiedByUserName",
+        "refs": ["modified by user name of event place"],
+        "type": "text"
+      },
+      {
+        "name": "EventPlace.Quota",
+        "refs": [
+          "amount of tickets available of event place",
+          "quota of experience place"
+        ],
+        "type": "number"
+      },
+      {
+        "name": "EventPlace.Price",
+        "refs": [
+          "price of event place",
+          "price, base currency of experience place"
+        ],
+        "type": "number"
+      },
+      {
+        "name": "EventPlace.NotAvailableTicketsCount",
+        "refs": ["not available tickets count of event place"],
+        "type": "number"
+      },
+      {
+        "name": "EventPlace.SalesStartDate",
+        "refs": ["sales start date of event place"],
+        "type": "date"
+      },
+      {
+        "name": "EventPlace.SalesEndDate",
+        "refs": ["sales end date of event place"],
+        "type": "date"
+      },
+      {
+        "name": "EventPlace.CreatedOn",
+        "refs": ["created on of event place"],
+        "type": "date"
+      },
+      {
+        "name": "EventPlace.ModifiedOn",
+        "refs": ["modified on of event place"],
+        "type": "date"
+      },
+      {
+        "name": "EventPlace.Tickets",
+        "refs": ["tickets of event place"],
+        "type": "collections"
+      },
+      {
+        "name": "TicketType.Title",
+        "refs": ["title of ticket type"],
+        "type": "text"
+      },
+      {
+        "name": "TicketType.CreatedByUserName",
+        "refs": ["created by user name of ticket type"],
+        "type": "text"
+      },
+      {
+        "name": "TicketType.ModifiedByUserName",
+        "refs": ["modified by user name of ticket type"],
+        "type": "text"
+      },
+      {
+        "name": "TicketType.CreatedOn",
+        "refs": ["created on of ticket type"],
+        "type": "date"
+      },
+      {
+        "name": "TicketType.ModifiedOn",
+        "refs": ["modified on of ticket type"],
+        "type": "date"
+      },
+      {
+        "name": "TicketType.Tickets",
+        "refs": ["tickets of ticket type", "huckets of hucket type"],
+        "type": "collections"
+      },
+      {
+        "name": "TicketType.EventPlaces",
+        "refs": ["event places of ticket type"],
+        "type": "collections"
+      },
+      {
+        "name": "Order.CreatedByUserName",
+        "refs": ["created by user name of order"],
+        "type": "text"
+      },
+      {
+        "name": "Order.ModifiedByUserName",
+        "refs": ["modified by user name of order"],
+        "type": "text"
+      },
+      { "name": "Order.Number", "refs": ["number of order"], "type": "number" },
+      {
+        "name": "Order.TotalAmount",
+        "refs": ["total amount, base currency of order"],
+        "type": "number"
+      },
+      {
+        "name": "Order.TaxAmount",
+        "refs": ["tax amount of order"],
+        "type": "number"
+      },
+      {
+        "name": "Order.DeliveryAmount",
+        "refs": ["delivery amount of order"],
+        "type": "number"
+      },
+      {
+        "name": "Order.PaymentAmount",
+        "refs": ["payment amount, base currency of order"],
+        "type": "number"
+      },
+      {
+        "name": "Order.CreatedOn",
+        "refs": ["created on of order"],
+        "type": "date"
+      },
+      {
+        "name": "Order.ModifiedOn",
+        "refs": ["modified on of order"],
+        "type": "date"
+      },
+      {
+        "name": "Order.Tickets",
+        "refs": ["tickets of order"],
+        "type": "collections"
+      }
+    ]
+  },
+  {
+    "name": "TicketScanLog",
+    "refs": ["ticket scan log"],
+    "cols": [
+      { "name": "Operation", "refs": ["operation"], "type": "text" },
+      {
+        "name": "CreatedByUserName",
+        "refs": ["created by user name"],
+        "type": "text"
+      },
+      {
+        "name": "ModifiedByUserName",
+        "refs": ["modified by user name"],
+        "type": "text"
+      },
+      { "name": "CreatedOn", "refs": ["created on"], "type": "date" },
+      { "name": "ModifiedOn", "refs": ["modified on"], "type": "date" },
+      {
+        "name": "Ticket.IsInside",
+        "refs": ["is inside of ticket"],
+        "type": "bool"
+      },
+      {
+        "name": "Ticket.TicketTitle",
+        "refs": ["ticket title of ticket"],
+        "type": "text"
+      },
+      { "name": "Ticket.Code", "refs": ["code of ticket"], "type": "text" },
+      {
+        "name": "Ticket.CreatedByUserName",
+        "refs": ["created by user name of ticket"],
+        "type": "text"
+      },
+      {
+        "name": "Ticket.ModifiedByUserName",
+        "refs": ["modified by user name of ticket"],
+        "type": "text"
+      },
+      { "name": "Ticket.Price", "refs": ["price of ticket"], "type": "number" },
+      {
+        "name": "Ticket.StartDate",
+        "refs": ["start date of ticket"],
+        "type": "date"
+      },
+      {
+        "name": "Ticket.CreatedOn",
+        "refs": ["created on of ticket"],
+        "type": "date"
+      },
+      {
+        "name": "Ticket.ModifiedOn",
+        "refs": ["modified on of ticket"],
+        "type": "date"
+      },
+      {
+        "name": "Ticket.TicketScanLogs",
+        "refs": ["ticket scan logs of ticket"],
+        "type": "collections"
+      }
+    ]
+  },
+  {
+    "name": "TicketType",
+    "refs": ["ticket type", "hucket type"],
+    "cols": [
+      { "name": "Title", "refs": ["title"], "type": "text" },
+      {
+        "name": "CreatedByUserName",
+        "refs": ["created by user name"],
+        "type": "text"
+      },
+      {
+        "name": "ModifiedByUserName",
+        "refs": ["modified by user name"],
+        "type": "text"
+      },
+      { "name": "CreatedOn", "refs": ["created on"], "type": "date" },
+      { "name": "ModifiedOn", "refs": ["modified on"], "type": "date" },
+      {
+        "name": "Tickets",
+        "refs": ["tickets", "huckets"],
+        "type": "collections"
+      },
+      { "name": "EventPlaces", "refs": ["event places"], "type": "collections" }
+    ]
+  },
+  {
+    "name": "MetaKey",
+    "refs": ["meta key"],
+    "cols": [
+      { "name": "Name", "refs": ["name"], "type": "text" },
+      {
+        "name": "CreatedByUserName",
+        "refs": ["created by user name"],
+        "type": "text"
+      },
+      {
+        "name": "ModifiedByUserName",
+        "refs": ["modified by user name"],
+        "type": "text"
+      },
+      { "name": "CreatedOn", "refs": ["created on"], "type": "date" },
+      { "name": "ModifiedOn", "refs": ["modified on"], "type": "date" },
+      {
+        "name": "PageMetaValues",
+        "refs": ["page meta values"],
+        "type": "collections"
+      }
+    ]
+  },
+  {
+    "name": "Message",
+    "refs": ["message"],
+    "cols": [
+      { "name": "Name", "refs": ["name"], "type": "text" },
+      {
+        "name": "CreatedByUserName",
+        "refs": ["created by user name"],
+        "type": "text"
+      },
+      {
+        "name": "ModifiedByUserName",
+        "refs": ["modified by user name"],
+        "type": "text"
+      },
+      { "name": "CreatedOn", "refs": ["created on"], "type": "date" },
+      { "name": "ModifiedOn", "refs": ["modified on"], "type": "date" },
+      {
+        "name": "MessageAttachments",
+        "refs": ["message attachments"],
+        "type": "collections"
+      }
+    ]
+  },
+  {
+    "name": "MessageAttachment",
+    "refs": ["message attachment"],
+    "cols": [
+      { "name": "Src", "refs": ["src"], "type": "text" },
+      {
+        "name": "CreatedByUserName",
+        "refs": ["created by user name"],
+        "type": "text"
+      },
+      {
+        "name": "ModifiedByUserName",
+        "refs": ["modified by user name"],
+        "type": "text"
+      },
+      { "name": "CreatedOn", "refs": ["created on"], "type": "date" },
+      { "name": "ModifiedOn", "refs": ["modified on"], "type": "date" },
+      { "name": "Message.Name", "refs": ["name of message"], "type": "text" },
+      {
+        "name": "Message.CreatedByUserName",
+        "refs": ["created by user name of message"],
+        "type": "text"
+      },
+      {
+        "name": "Message.ModifiedByUserName",
+        "refs": ["modified by user name of message"],
+        "type": "text"
+      },
+      {
+        "name": "Message.CreatedOn",
+        "refs": ["created on of message"],
+        "type": "date"
+      },
+      {
+        "name": "Message.ModifiedOn",
+        "refs": ["modified on of message"],
+        "type": "date"
+      },
+      {
+        "name": "Message.MessageAttachments",
+        "refs": ["message attachments of message"],
+        "type": "collections"
+      }
+    ]
+  },
+  {
+    "name": "MessageStopPhrases",
+    "refs": ["message stop phrases"],
+    "cols": [
+      { "name": "Phrase", "refs": ["phrase"], "type": "text" },
+      { "name": "Replacement", "refs": ["replacement"], "type": "text" },
+      {
+        "name": "CreatedByUserName",
+        "refs": ["created by user name"],
+        "type": "text"
+      },
+      {
+        "name": "ModifiedByUserName",
+        "refs": ["modified by user name"],
+        "type": "text"
+      },
+      { "name": "CreatedOn", "refs": ["created on"], "type": "date" },
+      { "name": "ModifiedOn", "refs": ["modified on"], "type": "date" }
+    ]
+  },
+  {
+    "name": "City",
+    "refs": ["city"],
+    "cols": [
+      { "name": "Name", "refs": ["name"], "type": "text" },
+      {
+        "name": "CreatedByUserName",
+        "refs": ["created by user name"],
+        "type": "text"
+      },
+      {
+        "name": "ModifiedByUserName",
+        "refs": ["modified by user name"],
+        "type": "text"
+      },
+      { "name": "CreatedOn", "refs": ["created on"], "type": "date" },
+      { "name": "ModifiedOn", "refs": ["modified on"], "type": "date" },
+      { "name": "Locations", "refs": ["locations"], "type": "collections" },
+      { "name": "Country.Name", "refs": ["name of country"], "type": "text" },
+      {
+        "name": "Country.CreatedByUserName",
+        "refs": ["created by user name of country"],
+        "type": "text"
+      },
+      {
+        "name": "Country.ModifiedByUserName",
+        "refs": ["modified by user name of country"],
+        "type": "text"
+      },
+      {
+        "name": "Country.CreatedOn",
+        "refs": ["created on of country"],
+        "type": "date"
+      },
+      {
+        "name": "Country.ModifiedOn",
+        "refs": ["modified on of country"],
+        "type": "date"
+      },
+      {
+        "name": "Country.Cities",
+        "refs": ["cities of country"],
+        "type": "collections"
+      },
+      {
+        "name": "Country.Locations",
+        "refs": ["locations of country"],
+        "type": "collections"
+      }
+    ]
+  },
+  {
+    "name": "Country",
+    "refs": ["country"],
+    "cols": [
+      { "name": "Name", "refs": ["name"], "type": "text" },
+      {
+        "name": "CreatedByUserName",
+        "refs": ["created by user name"],
+        "type": "text"
+      },
+      {
+        "name": "ModifiedByUserName",
+        "refs": ["modified by user name"],
+        "type": "text"
+      },
+      { "name": "CreatedOn", "refs": ["created on"], "type": "date" },
+      { "name": "ModifiedOn", "refs": ["modified on"], "type": "date" },
+      { "name": "Cities", "refs": ["cities"], "type": "collections" },
+      { "name": "Locations", "refs": ["locations"], "type": "collections" }
+    ]
+  },
+  {
+    "name": "Location",
+    "refs": ["location"],
+    "cols": [
+      { "name": "Title", "refs": ["title"], "type": "text" },
+      {
+        "name": "OnlineExperienceLink",
+        "refs": ["online experience link"],
+        "type": "text"
+      },
+      {
+        "name": "AddressLine1",
+        "refs": ["address line", "address line 1"],
+        "type": "text"
+      },
+      {
+        "name": "AddressLine2",
+        "refs": ["address line", "address line 2"],
+        "type": "text"
+      },
+      { "name": "CityName", "refs": ["city name", "city"], "type": "text" },
+      {
+        "name": "RegionName",
+        "refs": ["state / province / region", "region name"],
+        "type": "text"
+      },
+      {
+        "name": "PostalCode",
+        "refs": ["zip/postal code", "postal code"],
+        "type": "text"
+      },
+      { "name": "Code", "refs": ["code"], "type": "text" },
+      { "name": "FullAddress", "refs": ["full address"], "type": "text" },
+      {
+        "name": "CreatedByUserName",
+        "refs": ["created by user name"],
+        "type": "text"
+      },
+      {
+        "name": "ModifiedByUserName",
+        "refs": ["modified by user name"],
+        "type": "text"
+      },
+      { "name": "Lattitude", "refs": ["lattitude"], "type": "number" },
+      { "name": "Longitude", "refs": ["longitude"], "type": "number" },
+      { "name": "CreatedOn", "refs": ["created on"], "type": "date" },
+      { "name": "ModifiedOn", "refs": ["modified on"], "type": "date" },
+      {
+        "name": "Events",
+        "refs": ["experiences", "events"],
+        "type": "collections"
+      },
+      { "name": "Country.Name", "refs": ["name of country"], "type": "text" },
+      {
+        "name": "Country.CreatedByUserName",
+        "refs": ["created by user name of country"],
+        "type": "text"
+      },
+      {
+        "name": "Country.ModifiedByUserName",
+        "refs": ["modified by user name of country"],
+        "type": "text"
+      },
+      {
+        "name": "Country.CreatedOn",
+        "refs": ["created on of country"],
+        "type": "date"
+      },
+      {
+        "name": "Country.ModifiedOn",
+        "refs": ["modified on of country"],
+        "type": "date"
+      },
+      {
+        "name": "Country.Cities",
+        "refs": ["cities of country"],
+        "type": "collections"
+      },
+      {
+        "name": "Country.Locations",
+        "refs": ["locations of country"],
+        "type": "collections"
+      },
+      { "name": "City.Name", "refs": ["name of city"], "type": "text" },
+      {
+        "name": "City.CreatedByUserName",
+        "refs": ["created by user name of city"],
+        "type": "text"
+      },
+      {
+        "name": "City.ModifiedByUserName",
+        "refs": ["modified by user name of city"],
+        "type": "text"
+      },
+      {
+        "name": "City.CreatedOn",
+        "refs": ["created on of city"],
+        "type": "date"
+      },
+      {
+        "name": "City.ModifiedOn",
+        "refs": ["modified on of city"],
+        "type": "date"
+      },
+      {
+        "name": "City.Locations",
+        "refs": ["locations of city"],
+        "type": "collections"
+      },
+      {
+        "name": "LocationType.Name",
+        "refs": ["name of location type"],
+        "type": "text"
+      },
+      {
+        "name": "LocationType.CreatedByUserName",
+        "refs": ["created by user name of location type"],
+        "type": "text"
+      },
+      {
+        "name": "LocationType.ModifiedByUserName",
+        "refs": ["modified by user name of location type"],
+        "type": "text"
+      },
+      {
+        "name": "LocationType.CreatedOn",
+        "refs": ["created on of location type"],
+        "type": "date"
+      },
+      {
+        "name": "LocationType.ModifiedOn",
+        "refs": ["modified on of location type"],
+        "type": "date"
+      },
+      {
+        "name": "LocationType.Locations",
+        "refs": ["locationscaption of location type"],
+        "type": "collections"
+      }
+    ]
+  },
+  {
+    "name": "LocationType",
+    "refs": ["location type"],
+    "cols": [
+      { "name": "Name", "refs": ["name"], "type": "text" },
+      {
+        "name": "CreatedByUserName",
+        "refs": ["created by user name"],
+        "type": "text"
+      },
+      {
+        "name": "ModifiedByUserName",
+        "refs": ["modified by user name"],
+        "type": "text"
+      },
+      { "name": "CreatedOn", "refs": ["created on"], "type": "date" },
+      { "name": "ModifiedOn", "refs": ["modified on"], "type": "date" },
+      {
+        "name": "Locations",
+        "refs": ["locationscaption", "locations"],
+        "type": "collections"
+      }
+    ]
+  },
+  {
+    "name": "Image",
+    "refs": ["image"],
+    "cols": [
+      { "name": "Alt", "refs": ["alt"], "type": "text" },
+      {
+        "name": "CreatedByUserName",
+        "refs": ["created by user name"],
+        "type": "text"
+      },
+      {
+        "name": "ModifiedByUserName",
+        "refs": ["modified by user name"],
+        "type": "text"
+      },
+      { "name": "CreatedOn", "refs": ["created on"], "type": "date" },
+      { "name": "ModifiedOn", "refs": ["modified on"], "type": "date" },
+      {
+        "name": "EventImages",
+        "refs": ["experience images", "event images"],
+        "type": "collections"
+      },
+      {
+        "name": "EventMainImages",
+        "refs": ["experience main images", "event main images"],
+        "type": "collections"
+      },
+      {
+        "name": "EventWidescreenImages",
+        "refs": ["event widescreen images", "experience widescreen images"],
+        "type": "collections"
+      },
+      {
+        "name": "EventCategories",
+        "refs": ["event categories", "experience categories"],
+        "type": "collections"
+      },
+      { "name": "Tickets", "refs": ["tickets"], "type": "collections" }
+    ]
+  },
+  {
+    "name": "Honorific",
+    "refs": ["honorific"],
+    "cols": [
+      { "name": "Title", "refs": ["title"], "type": "text" },
+      {
+        "name": "CreatedByUserName",
+        "refs": ["created by user name"],
+        "type": "text"
+      },
+      {
+        "name": "ModifiedByUserName",
+        "refs": ["modified by user name"],
+        "type": "text"
+      },
+      { "name": "CreatedOn", "refs": ["created on"], "type": "date" },
+      { "name": "ModifiedOn", "refs": ["modified on"], "type": "date" }
+    ]
+  },
+  {
+    "name": "Gender",
+    "refs": ["gender"],
+    "cols": [
+      { "name": "Title", "refs": ["title"], "type": "text" },
+      {
+        "name": "CreatedByUserName",
+        "refs": ["created by user name"],
+        "type": "text"
+      },
+      {
+        "name": "ModifiedByUserName",
+        "refs": ["modified by user name"],
+        "type": "text"
+      },
+      { "name": "CreatedOn", "refs": ["created on"], "type": "date" },
+      { "name": "ModifiedOn", "refs": ["modified on"], "type": "date" }
+    ]
+  },
+  {
+    "name": "Event",
+    "refs": ["experience", "event"],
+    "cols": [
+      {
+        "name": "IsActive",
+        "refs": ["is visible on site", "is active"],
+        "type": "bool"
+      },
+      { "name": "Title", "refs": ["title"], "type": "text" },
+      { "name": "Code", "refs": ["code"], "type": "text" },
+      { "name": "Description", "refs": ["description"], "type": "text" },
+      { "name": "Link", "refs": ["link"], "type": "text" },
+      { "name": "LocationTitle", "refs": ["location title"], "type": "text" },
+      {
+        "name": "CreatedByUserName",
+        "refs": ["created by user name"],
+        "type": "text"
+      },
+      {
+        "name": "ModifiedByUserName",
+        "refs": ["modified by user name"],
+        "type": "text"
+      },
+      {
+        "name": "MinPrice",
+        "refs": ["min price, base currency", "min price"],
+        "type": "number"
+      },
+      {
+        "name": "MaxPrice",
+        "refs": ["max price, base currency", "max price"],
+        "type": "number"
+      },
+      { "name": "LikesCount", "refs": ["likes count"], "type": "number" },
+      {
+        "name": "TotalTicketsCount",
+        "refs": ["total tickets count"],
+        "type": "number"
+      },
+      {
+        "name": "SoldTicketsCount",
+        "refs": ["sold tickets count"],
+        "type": "number"
+      },
+      {
+        "name": "SoldTicketsAmount",
+        "refs": ["sold tickets amount", "sold tickets amount, base currency"],
+        "type": "number"
+      },
+      { "name": "StartDate", "refs": ["start date"], "type": "date" },
+      { "name": "EndDate", "refs": ["end date"], "type": "date" },
+      { "name": "CreatedOn", "refs": ["created on"], "type": "date" },
+      { "name": "ModifiedOn", "refs": ["modified on"], "type": "date" },
+      {
+        "name": "EventImages",
+        "refs": ["experience images", "event images"],
+        "type": "collections"
+      },
+      {
+        "name": "EventInCategories",
+        "refs": ["experience in categories", "event in categories"],
+        "type": "collections"
+      },
+      {
+        "name": "EventFlags",
+        "refs": ["event flags", "experience flags"],
+        "type": "collections"
+      },
+      {
+        "name": "FavouriteEvents",
+        "refs": ["favourite events"],
+        "type": "collections"
+      },
+      {
+        "name": "EventReviews",
+        "refs": ["event reviews", "experience reviews"],
+        "type": "collections"
+      },
+      {
+        "name": "EventMetaValues",
+        "refs": ["event meta values", "experience meta values"],
+        "type": "collections"
+      },
+      { "name": "Dates", "refs": ["dates"], "type": "collections" },
+      {
+        "name": "Location.Title",
+        "refs": ["title of location"],
+        "type": "text"
+      },
+      {
+        "name": "Location.OnlineExperienceLink",
+        "refs": ["online experience link of location"],
+        "type": "text"
+      },
+      {
+        "name": "Location.AddressLine1",
+        "refs": ["address line of location"],
+        "type": "text"
+      },
+      {
+        "name": "Location.AddressLine2",
+        "refs": ["address line of location"],
+        "type": "text"
+      },
+      {
+        "name": "Location.CityName",
+        "refs": ["city name of location"],
+        "type": "text"
+      },
+      {
+        "name": "Location.RegionName",
+        "refs": ["state / province / region of location"],
+        "type": "text"
+      },
+      {
+        "name": "Location.PostalCode",
+        "refs": ["zip/postal code of location"],
+        "type": "text"
+      },
+      { "name": "Location.Code", "refs": ["code of location"], "type": "text" },
+      {
+        "name": "Location.FullAddress",
+        "refs": ["full address of location"],
+        "type": "text"
+      },
+      {
+        "name": "Location.CreatedByUserName",
+        "refs": ["created by user name of location"],
+        "type": "text"
+      },
+      {
+        "name": "Location.ModifiedByUserName",
+        "refs": ["modified by user name of location"],
+        "type": "text"
+      },
+      {
+        "name": "Location.Lattitude",
+        "refs": ["lattitude of location"],
+        "type": "number"
+      },
+      {
+        "name": "Location.Longitude",
+        "refs": ["longitude of location"],
+        "type": "number"
+      },
+      {
+        "name": "Location.CreatedOn",
+        "refs": ["created on of location"],
+        "type": "date"
+      },
+      {
+        "name": "Location.ModifiedOn",
+        "refs": ["modified on of location"],
+        "type": "date"
+      },
+      {
+        "name": "Location.Events",
+        "refs": ["experiences of location"],
+        "type": "collections"
+      },
+      {
+        "name": "Organiser.IsVerified",
+        "refs": ["is verified of organiser"],
+        "type": "bool"
+      },
+      {
+        "name": "Organiser.Name",
+        "refs": ["name of organiser"],
+        "type": "text"
+      },
+      {
+        "name": "Organiser.Description",
+        "refs": ["description of organiser"],
+        "type": "text"
+      },
+      {
+        "name": "Organiser.Code",
+        "refs": ["code of organiser"],
+        "type": "text"
+      },
+      {
+        "name": "Organiser.Link",
+        "refs": ["link of organiser"],
+        "type": "text"
+      },
+      {
+        "name": "Organiser.CreatedByUserName",
+        "refs": ["created by user name of organiser"],
+        "type": "text"
+      },
+      {
+        "name": "Organiser.ModifiedByUserName",
+        "refs": ["modified by user name of organiser"],
+        "type": "text"
+      },
+      {
+        "name": "Organiser.EventsCount",
+        "refs": ["events count of organiser"],
+        "type": "number"
+      },
+      {
+        "name": "Organiser.TotalSalesAmount",
+        "refs": ["total sales amount of organiser"],
+        "type": "number"
+      },
+      {
+        "name": "Organiser.TotalSoldTicketsCount",
+        "refs": ["sold tickets count of organiser"],
+        "type": "number"
+      },
+      {
+        "name": "Organiser.CreatedOn",
+        "refs": ["created on of organiser"],
+        "type": "date"
+      },
+      {
+        "name": "Organiser.ModifiedOn",
+        "refs": ["modified on of organiser"],
+        "type": "date"
+      },
+      {
+        "name": "Organiser.Events",
+        "refs": ["experiences of organiser"],
+        "type": "collections"
+      }
+    ]
+  },
+  {
+    "name": "EventCategory",
+    "refs": ["experience category", "event category"],
+    "cols": [
+      {
+        "name": "IsApprovalRequired",
+        "refs": ["is approval required"],
+        "type": "bool"
+      },
+      { "name": "Name", "refs": ["name"], "type": "text" },
+      { "name": "Code", "refs": ["code"], "type": "text" },
+      {
+        "name": "CreatedByUserName",
+        "refs": ["created by user name"],
+        "type": "text"
+      },
+      {
+        "name": "ModifiedByUserName",
+        "refs": ["modified by user name"],
+        "type": "text"
+      },
+      { "name": "Priority", "refs": ["priority"], "type": "number" },
+      { "name": "CreatedOn", "refs": ["created on"], "type": "date" },
+      { "name": "ModifiedOn", "refs": ["modified on"], "type": "date" },
+      {
+        "name": "EventInCategories",
+        "refs": ["experience in categories", "event in categories"],
+        "type": "collections"
+      },
+      {
+        "name": "EventCategoryInTypes",
+        "refs": ["event category in types", "experience category in types"],
+        "type": "collections"
+      },
+      {
+        "name": "Children",
+        "refs": ["children", "children categories"],
+        "type": "collections"
+      },
+      {
+        "name": "Parent.IsApprovalRequired",
+        "refs": ["is approval required of experience category"],
+        "type": "bool"
+      },
+      {
+        "name": "Parent.Name",
+        "refs": ["name of experience category"],
+        "type": "text"
+      },
+      {
+        "name": "Parent.Code",
+        "refs": ["code of experience category"],
+        "type": "text"
+      },
+      {
+        "name": "Parent.CreatedByUserName",
+        "refs": ["created by user name of experience category"],
+        "type": "text"
+      },
+      {
+        "name": "Parent.ModifiedByUserName",
+        "refs": ["modified by user name of experience category"],
+        "type": "text"
+      },
+      {
+        "name": "Parent.Priority",
+        "refs": ["priority of experience category"],
+        "type": "number"
+      },
+      {
+        "name": "Parent.CreatedOn",
+        "refs": ["created on of experience category"],
+        "type": "date"
+      },
+      {
+        "name": "Parent.ModifiedOn",
+        "refs": ["modified on of experience category"],
+        "type": "date"
+      },
+      {
+        "name": "Parent.EventInCategories",
+        "refs": [
+          "experience in categories of experience category",
+          "event in categories of event category"
+        ],
+        "type": "collections"
+      },
+      {
+        "name": "Parent.EventCategoryInTypes",
+        "refs": [
+          "event category in types of experience category",
+          "experience category in types of event category"
+        ],
+        "type": "collections"
+      },
+      {
+        "name": "Parent.Children",
+        "refs": [
+          "children of experience category",
+          "children categories of event category"
+        ],
+        "type": "collections"
+      }
+    ]
+  },
+  {
+    "name": "EventCategoryInType",
+    "refs": ["event category in type", "experience category in type"],
+    "cols": [
+      {
+        "name": "CreatedByUserName",
+        "refs": ["created by user name"],
+        "type": "text"
+      },
+      {
+        "name": "ModifiedByUserName",
+        "refs": ["modified by user name"],
+        "type": "text"
+      },
+      { "name": "CreatedOn", "refs": ["created on"], "type": "date" },
+      { "name": "ModifiedOn", "refs": ["modified on"], "type": "date" },
+      {
+        "name": "EventCategory.IsApprovalRequired",
+        "refs": ["is approval required of experience category"],
+        "type": "bool"
+      },
+      {
+        "name": "EventCategory.Name",
+        "refs": ["name of experience category"],
+        "type": "text"
+      },
+      {
+        "name": "EventCategory.Code",
+        "refs": ["code of experience category"],
+        "type": "text"
+      },
+      {
+        "name": "EventCategory.CreatedByUserName",
+        "refs": ["created by user name of experience category"],
+        "type": "text"
+      },
+      {
+        "name": "EventCategory.ModifiedByUserName",
+        "refs": ["modified by user name of experience category"],
+        "type": "text"
+      },
+      {
+        "name": "EventCategory.Priority",
+        "refs": ["priority of experience category"],
+        "type": "number"
+      },
+      {
+        "name": "EventCategory.CreatedOn",
+        "refs": ["created on of experience category"],
+        "type": "date"
+      },
+      {
+        "name": "EventCategory.ModifiedOn",
+        "refs": ["modified on of experience category"],
+        "type": "date"
+      },
+      {
+        "name": "EventCategory.EventInCategories",
+        "refs": [
+          "experience in categories of experience category",
+          "event in categories of event category"
+        ],
+        "type": "collections"
+      },
+      {
+        "name": "EventCategory.EventCategoryInTypes",
+        "refs": [
+          "event category in types of experience category",
+          "experience category in types of event category"
+        ],
+        "type": "collections"
+      },
+      {
+        "name": "EventCategory.Children",
+        "refs": [
+          "children of experience category",
+          "children categories of event category"
+        ],
+        "type": "collections"
+      },
+      {
+        "name": "EventCategoryType.Name",
+        "refs": ["name of experience category type"],
+        "type": "text"
+      },
+      {
+        "name": "EventCategoryType.CreatedByUserName",
+        "refs": ["created by user name of experience category type"],
+        "type": "text"
+      },
+      {
+        "name": "EventCategoryType.ModifiedByUserName",
+        "refs": ["modified by user name of experience category type"],
+        "type": "text"
+      },
+      {
+        "name": "EventCategoryType.CreatedOn",
+        "refs": ["created on of experience category type"],
+        "type": "date"
+      },
+      {
+        "name": "EventCategoryType.ModifiedOn",
+        "refs": ["modified on of experience category type"],
+        "type": "date"
+      },
+      {
+        "name": "EventCategoryType.EventCategoryInTypes",
+        "refs": [
+          "event category in types of experience category type",
+          "experience category in types of event category type"
+        ],
+        "type": "collections"
+      }
+    ]
+  },
+  {
+    "name": "EventCategoryType",
+    "refs": ["experience category type", "event category type"],
+    "cols": [
+      { "name": "Name", "refs": ["name"], "type": "text" },
+      {
+        "name": "CreatedByUserName",
+        "refs": ["created by user name"],
+        "type": "text"
+      },
+      {
+        "name": "ModifiedByUserName",
+        "refs": ["modified by user name"],
+        "type": "text"
+      },
+      { "name": "CreatedOn", "refs": ["created on"], "type": "date" },
+      { "name": "ModifiedOn", "refs": ["modified on"], "type": "date" },
+      {
+        "name": "EventCategoryInTypes",
+        "refs": ["event category in types", "experience category in types"],
+        "type": "collections"
+      }
+    ]
+  },
+  {
+    "name": "EventDate",
+    "refs": ["event date", "experience date"],
+    "cols": [
+      {
+        "name": "CreatedByUserName",
+        "refs": ["created by user name"],
+        "type": "text"
+      },
+      {
+        "name": "ModifiedByUserName",
+        "refs": ["modified by user name"],
+        "type": "text"
+      },
+      { "name": "StartDate", "refs": ["start date"], "type": "date" },
+      { "name": "EndDate", "refs": ["end date"], "type": "date" },
+      { "name": "CreatedOn", "refs": ["created on"], "type": "date" },
+      { "name": "ModifiedOn", "refs": ["modified on"], "type": "date" },
+      {
+        "name": "EventPlaces",
+        "refs": ["event places", "experience places"],
+        "type": "collections"
+      },
+      { "name": "LineUps", "refs": ["line ups"], "type": "collections" },
+      {
+        "name": "Event.IsActive",
+        "refs": ["is visible on site of experience", "is active of event"],
+        "type": "bool"
+      },
+      {
+        "name": "Event.Title",
+        "refs": ["title of experience"],
+        "type": "text"
+      },
+      { "name": "Event.Code", "refs": ["code of experience"], "type": "text" },
+      {
+        "name": "Event.Description",
+        "refs": ["description of experience"],
+        "type": "text"
+      },
+      { "name": "Event.Link", "refs": ["link of experience"], "type": "text" },
+      {
+        "name": "Event.LocationTitle",
+        "refs": ["location title of experience"],
+        "type": "text"
+      },
+      {
+        "name": "Event.CreatedByUserName",
+        "refs": ["created by user name of experience"],
+        "type": "text"
+      },
+      {
+        "name": "Event.ModifiedByUserName",
+        "refs": ["modified by user name of experience"],
+        "type": "text"
+      },
+      {
+        "name": "Event.MinPrice",
+        "refs": [
+          "min price, base currency of experience",
+          "min price of event"
+        ],
+        "type": "number"
+      },
+      {
+        "name": "Event.MaxPrice",
+        "refs": [
+          "max price, base currency of experience",
+          "max price of event"
+        ],
+        "type": "number"
+      },
+      {
+        "name": "Event.LikesCount",
+        "refs": ["likes count of experience"],
+        "type": "number"
+      },
+      {
+        "name": "Event.TotalTicketsCount",
+        "refs": ["total tickets count of experience"],
+        "type": "number"
+      },
+      {
+        "name": "Event.SoldTicketsCount",
+        "refs": ["sold tickets count of experience"],
+        "type": "number"
+      },
+      {
+        "name": "Event.SoldTicketsAmount",
+        "refs": [
+          "sold tickets amount of experience",
+          "sold tickets amount, base currency of event"
+        ],
+        "type": "number"
+      },
+      {
+        "name": "Event.StartDate",
+        "refs": ["start date of experience"],
+        "type": "date"
+      },
+      {
+        "name": "Event.EndDate",
+        "refs": ["end date of experience"],
+        "type": "date"
+      },
+      {
+        "name": "Event.CreatedOn",
+        "refs": ["created on of experience"],
+        "type": "date"
+      },
+      {
+        "name": "Event.ModifiedOn",
+        "refs": ["modified on of experience"],
+        "type": "date"
+      },
+      {
+        "name": "Event.EventImages",
+        "refs": ["experience images of experience", "event images of event"],
+        "type": "collections"
+      },
+      {
+        "name": "Event.EventInCategories",
+        "refs": [
+          "experience in categories of experience",
+          "event in categories of event"
+        ],
+        "type": "collections"
+      },
+      {
+        "name": "Event.EventFlags",
+        "refs": ["event flags of experience", "experience flags of event"],
+        "type": "collections"
+      },
+      {
+        "name": "Event.FavouriteEvents",
+        "refs": ["favourite events of experience"],
+        "type": "collections"
+      },
+      {
+        "name": "Event.EventReviews",
+        "refs": ["event reviews of experience", "experience reviews of event"],
+        "type": "collections"
+      },
+      {
+        "name": "Event.EventMetaValues",
+        "refs": [
+          "event meta values of experience",
+          "experience meta values of event"
+        ],
+        "type": "collections"
+      },
+      {
+        "name": "Event.Dates",
+        "refs": ["dates of experience"],
+        "type": "collections"
+      }
+    ]
+  },
+  {
+    "name": "EventFlag",
+    "refs": ["event flag", "experience flag"],
+    "cols": [
+      { "name": "Reason", "refs": ["reason"], "type": "text" },
+      {
+        "name": "CreatedByUserName",
+        "refs": ["created by user name"],
+        "type": "text"
+      },
+      {
+        "name": "ModifiedByUserName",
+        "refs": ["modified by user name"],
+        "type": "text"
+      },
+      { "name": "CreatedOn", "refs": ["created on"], "type": "date" },
+      { "name": "ModifiedOn", "refs": ["modified on"], "type": "date" },
+      {
+        "name": "Event.IsActive",
+        "refs": ["is visible on site of experience", "is active of event"],
+        "type": "bool"
+      },
+      {
+        "name": "Event.Title",
+        "refs": ["title of experience"],
+        "type": "text"
+      },
+      { "name": "Event.Code", "refs": ["code of experience"], "type": "text" },
+      {
+        "name": "Event.Description",
+        "refs": ["description of experience"],
+        "type": "text"
+      },
+      { "name": "Event.Link", "refs": ["link of experience"], "type": "text" },
+      {
+        "name": "Event.LocationTitle",
+        "refs": ["location title of experience"],
+        "type": "text"
+      },
+      {
+        "name": "Event.CreatedByUserName",
+        "refs": ["created by user name of experience"],
+        "type": "text"
+      },
+      {
+        "name": "Event.ModifiedByUserName",
+        "refs": ["modified by user name of experience"],
+        "type": "text"
+      },
+      {
+        "name": "Event.MinPrice",
+        "refs": [
+          "min price, base currency of experience",
+          "min price of event"
+        ],
+        "type": "number"
+      },
+      {
+        "name": "Event.MaxPrice",
+        "refs": [
+          "max price, base currency of experience",
+          "max price of event"
+        ],
+        "type": "number"
+      },
+      {
+        "name": "Event.LikesCount",
+        "refs": ["likes count of experience"],
+        "type": "number"
+      },
+      {
+        "name": "Event.TotalTicketsCount",
+        "refs": ["total tickets count of experience"],
+        "type": "number"
+      },
+      {
+        "name": "Event.SoldTicketsCount",
+        "refs": ["sold tickets count of experience"],
+        "type": "number"
+      },
+      {
+        "name": "Event.SoldTicketsAmount",
+        "refs": [
+          "sold tickets amount of experience",
+          "sold tickets amount, base currency of event"
+        ],
+        "type": "number"
+      },
+      {
+        "name": "Event.StartDate",
+        "refs": ["start date of experience"],
+        "type": "date"
+      },
+      {
+        "name": "Event.EndDate",
+        "refs": ["end date of experience"],
+        "type": "date"
+      },
+      {
+        "name": "Event.CreatedOn",
+        "refs": ["created on of experience"],
+        "type": "date"
+      },
+      {
+        "name": "Event.ModifiedOn",
+        "refs": ["modified on of experience"],
+        "type": "date"
+      },
+      {
+        "name": "Event.EventImages",
+        "refs": ["experience images of experience", "event images of event"],
+        "type": "collections"
+      },
+      {
+        "name": "Event.EventInCategories",
+        "refs": [
+          "experience in categories of experience",
+          "event in categories of event"
+        ],
+        "type": "collections"
+      },
+      {
+        "name": "Event.EventFlags",
+        "refs": ["event flags of experience", "experience flags of event"],
+        "type": "collections"
+      },
+      {
+        "name": "Event.FavouriteEvents",
+        "refs": ["favourite events of experience"],
+        "type": "collections"
+      },
+      {
+        "name": "Event.EventReviews",
+        "refs": ["event reviews of experience", "experience reviews of event"],
+        "type": "collections"
+      },
+      {
+        "name": "Event.EventMetaValues",
+        "refs": [
+          "event meta values of experience",
+          "experience meta values of event"
+        ],
+        "type": "collections"
+      },
+      {
+        "name": "Event.Dates",
+        "refs": ["dates of experience"],
+        "type": "collections"
+      }
+    ]
+  },
+  {
+    "name": "EventImage",
+    "refs": ["experience image", "event image"],
+    "cols": [
+      {
+        "name": "CreatedByUserName",
+        "refs": ["created by user name"],
+        "type": "text"
+      },
+      {
+        "name": "ModifiedByUserName",
+        "refs": ["modified by user name"],
+        "type": "text"
+      },
+      { "name": "CreatedOn", "refs": ["created on"], "type": "date" },
+      { "name": "ModifiedOn", "refs": ["modified on"], "type": "date" },
+      {
+        "name": "Event.IsActive",
+        "refs": ["is visible on site of experience", "is active of event"],
+        "type": "bool"
+      },
+      {
+        "name": "Event.Title",
+        "refs": ["title of experience"],
+        "type": "text"
+      },
+      { "name": "Event.Code", "refs": ["code of experience"], "type": "text" },
+      {
+        "name": "Event.Description",
+        "refs": ["description of experience"],
+        "type": "text"
+      },
+      { "name": "Event.Link", "refs": ["link of experience"], "type": "text" },
+      {
+        "name": "Event.LocationTitle",
+        "refs": ["location title of experience"],
+        "type": "text"
+      },
+      {
+        "name": "Event.CreatedByUserName",
+        "refs": ["created by user name of experience"],
+        "type": "text"
+      },
+      {
+        "name": "Event.ModifiedByUserName",
+        "refs": ["modified by user name of experience"],
+        "type": "text"
+      },
+      {
+        "name": "Event.MinPrice",
+        "refs": [
+          "min price, base currency of experience",
+          "min price of event"
+        ],
+        "type": "number"
+      },
+      {
+        "name": "Event.MaxPrice",
+        "refs": [
+          "max price, base currency of experience",
+          "max price of event"
+        ],
+        "type": "number"
+      },
+      {
+        "name": "Event.LikesCount",
+        "refs": ["likes count of experience"],
+        "type": "number"
+      },
+      {
+        "name": "Event.TotalTicketsCount",
+        "refs": ["total tickets count of experience"],
+        "type": "number"
+      },
+      {
+        "name": "Event.SoldTicketsCount",
+        "refs": ["sold tickets count of experience"],
+        "type": "number"
+      },
+      {
+        "name": "Event.SoldTicketsAmount",
+        "refs": [
+          "sold tickets amount of experience",
+          "sold tickets amount, base currency of event"
+        ],
+        "type": "number"
+      },
+      {
+        "name": "Event.StartDate",
+        "refs": ["start date of experience"],
+        "type": "date"
+      },
+      {
+        "name": "Event.EndDate",
+        "refs": ["end date of experience"],
+        "type": "date"
+      },
+      {
+        "name": "Event.CreatedOn",
+        "refs": ["created on of experience"],
+        "type": "date"
+      },
+      {
+        "name": "Event.ModifiedOn",
+        "refs": ["modified on of experience"],
+        "type": "date"
+      },
+      {
+        "name": "Event.EventImages",
+        "refs": ["experience images of experience", "event images of event"],
+        "type": "collections"
+      },
+      {
+        "name": "Event.EventInCategories",
+        "refs": [
+          "experience in categories of experience",
+          "event in categories of event"
+        ],
+        "type": "collections"
+      },
+      {
+        "name": "Event.EventFlags",
+        "refs": ["event flags of experience", "experience flags of event"],
+        "type": "collections"
+      },
+      {
+        "name": "Event.FavouriteEvents",
+        "refs": ["favourite events of experience"],
+        "type": "collections"
+      },
+      {
+        "name": "Event.EventReviews",
+        "refs": ["event reviews of experience", "experience reviews of event"],
+        "type": "collections"
+      },
+      {
+        "name": "Event.EventMetaValues",
+        "refs": [
+          "event meta values of experience",
+          "experience meta values of event"
+        ],
+        "type": "collections"
+      },
+      {
+        "name": "Event.Dates",
+        "refs": ["dates of experience"],
+        "type": "collections"
+      }
+    ]
+  },
+  {
+    "name": "EventInCategory",
+    "refs": ["experience in category", "event in category"],
+    "cols": [
+      { "name": "IsApproved", "refs": ["is approved"], "type": "bool" },
+      {
+        "name": "CreatedByUserName",
+        "refs": ["created by user name"],
+        "type": "text"
+      },
+      {
+        "name": "ModifiedByUserName",
+        "refs": ["modified by user name"],
+        "type": "text"
+      },
+      { "name": "CreatedOn", "refs": ["created on"], "type": "date" },
+      { "name": "ModifiedOn", "refs": ["modified on"], "type": "date" },
+      {
+        "name": "Event.IsActive",
+        "refs": ["is visible on site of experience", "is active of event"],
+        "type": "bool"
+      },
+      {
+        "name": "Event.Title",
+        "refs": ["title of experience"],
+        "type": "text"
+      },
+      { "name": "Event.Code", "refs": ["code of experience"], "type": "text" },
+      {
+        "name": "Event.Description",
+        "refs": ["description of experience"],
+        "type": "text"
+      },
+      { "name": "Event.Link", "refs": ["link of experience"], "type": "text" },
+      {
+        "name": "Event.LocationTitle",
+        "refs": ["location title of experience"],
+        "type": "text"
+      },
+      {
+        "name": "Event.CreatedByUserName",
+        "refs": ["created by user name of experience"],
+        "type": "text"
+      },
+      {
+        "name": "Event.ModifiedByUserName",
+        "refs": ["modified by user name of experience"],
+        "type": "text"
+      },
+      {
+        "name": "Event.MinPrice",
+        "refs": [
+          "min price, base currency of experience",
+          "min price of event"
+        ],
+        "type": "number"
+      },
+      {
+        "name": "Event.MaxPrice",
+        "refs": [
+          "max price, base currency of experience",
+          "max price of event"
+        ],
+        "type": "number"
+      },
+      {
+        "name": "Event.LikesCount",
+        "refs": ["likes count of experience"],
+        "type": "number"
+      },
+      {
+        "name": "Event.TotalTicketsCount",
+        "refs": ["total tickets count of experience"],
+        "type": "number"
+      },
+      {
+        "name": "Event.SoldTicketsCount",
+        "refs": ["sold tickets count of experience"],
+        "type": "number"
+      },
+      {
+        "name": "Event.SoldTicketsAmount",
+        "refs": [
+          "sold tickets amount of experience",
+          "sold tickets amount, base currency of event"
+        ],
+        "type": "number"
+      },
+      {
+        "name": "Event.StartDate",
+        "refs": ["start date of experience"],
+        "type": "date"
+      },
+      {
+        "name": "Event.EndDate",
+        "refs": ["end date of experience"],
+        "type": "date"
+      },
+      {
+        "name": "Event.CreatedOn",
+        "refs": ["created on of experience"],
+        "type": "date"
+      },
+      {
+        "name": "Event.ModifiedOn",
+        "refs": ["modified on of experience"],
+        "type": "date"
+      },
+      {
+        "name": "Event.EventImages",
+        "refs": ["experience images of experience", "event images of event"],
+        "type": "collections"
+      },
+      {
+        "name": "Event.EventInCategories",
+        "refs": [
+          "experience in categories of experience",
+          "event in categories of event"
+        ],
+        "type": "collections"
+      },
+      {
+        "name": "Event.EventFlags",
+        "refs": ["event flags of experience", "experience flags of event"],
+        "type": "collections"
+      },
+      {
+        "name": "Event.FavouriteEvents",
+        "refs": ["favourite events of experience"],
+        "type": "collections"
+      },
+      {
+        "name": "Event.EventReviews",
+        "refs": ["event reviews of experience", "experience reviews of event"],
+        "type": "collections"
+      },
+      {
+        "name": "Event.EventMetaValues",
+        "refs": [
+          "event meta values of experience",
+          "experience meta values of event"
+        ],
+        "type": "collections"
+      },
+      {
+        "name": "Event.Dates",
+        "refs": ["dates of experience"],
+        "type": "collections"
+      },
+      {
+        "name": "EventCategory.IsApprovalRequired",
+        "refs": ["is approval required of experience category"],
+        "type": "bool"
+      },
+      {
+        "name": "EventCategory.Name",
+        "refs": ["name of experience category"],
+        "type": "text"
+      },
+      {
+        "name": "EventCategory.Code",
+        "refs": ["code of experience category"],
+        "type": "text"
+      },
+      {
+        "name": "EventCategory.CreatedByUserName",
+        "refs": ["created by user name of experience category"],
+        "type": "text"
+      },
+      {
+        "name": "EventCategory.ModifiedByUserName",
+        "refs": ["modified by user name of experience category"],
+        "type": "text"
+      },
+      {
+        "name": "EventCategory.Priority",
+        "refs": ["priority of experience category"],
+        "type": "number"
+      },
+      {
+        "name": "EventCategory.CreatedOn",
+        "refs": ["created on of experience category"],
+        "type": "date"
+      },
+      {
+        "name": "EventCategory.ModifiedOn",
+        "refs": ["modified on of experience category"],
+        "type": "date"
+      },
+      {
+        "name": "EventCategory.EventInCategories",
+        "refs": [
+          "experience in categories of experience category",
+          "event in categories of event category"
+        ],
+        "type": "collections"
+      },
+      {
+        "name": "EventCategory.EventCategoryInTypes",
+        "refs": [
+          "event category in types of experience category",
+          "experience category in types of event category"
+        ],
+        "type": "collections"
+      },
+      {
+        "name": "EventCategory.Children",
+        "refs": [
+          "children of experience category",
+          "children categories of event category"
+        ],
+        "type": "collections"
+      }
+    ]
+  },
+  {
+    "name": "EventLineUp",
+    "refs": ["event line up", "experience line up"],
+    "cols": [
+      {
+        "name": "CreatedByUserName",
+        "refs": ["created by user name"],
+        "type": "text"
+      },
+      {
+        "name": "ModifiedByUserName",
+        "refs": ["modified by user name"],
+        "type": "text"
+      },
+      { "name": "Position", "refs": ["position"], "type": "number" },
+      { "name": "CreatedOn", "refs": ["created on"], "type": "date" },
+      { "name": "ModifiedOn", "refs": ["modified on"], "type": "date" },
+      {
+        "name": "Date.CreatedByUserName",
+        "refs": ["created by user name of event date"],
+        "type": "text"
+      },
+      {
+        "name": "Date.ModifiedByUserName",
+        "refs": ["modified by user name of event date"],
+        "type": "text"
+      },
+      {
+        "name": "Date.StartDate",
+        "refs": ["start date of event date"],
+        "type": "date"
+      },
+      {
+        "name": "Date.EndDate",
+        "refs": ["end date of event date"],
+        "type": "date"
+      },
+      {
+        "name": "Date.CreatedOn",
+        "refs": ["created on of event date"],
+        "type": "date"
+      },
+      {
+        "name": "Date.ModifiedOn",
+        "refs": ["modified on of event date"],
+        "type": "date"
+      },
+      {
+        "name": "Date.EventPlaces",
+        "refs": [
+          "event places of event date",
+          "experience places of experience date"
+        ],
+        "type": "collections"
+      },
+      {
+        "name": "Date.LineUps",
+        "refs": ["line ups of event date"],
+        "type": "collections"
+      },
+      {
+        "name": "EventMember.Name",
+        "refs": ["name of experience member"],
+        "type": "text"
+      },
+      {
+        "name": "EventMember.CreatedByUserName",
+        "refs": ["created by user name of experience member"],
+        "type": "text"
+      },
+      {
+        "name": "EventMember.ModifiedByUserName",
+        "refs": ["modified by user name of experience member"],
+        "type": "text"
+      },
+      {
+        "name": "EventMember.CreatedOn",
+        "refs": ["created on of experience member"],
+        "type": "date"
+      },
+      {
+        "name": "EventMember.ModifiedOn",
+        "refs": ["modified on of experience member"],
+        "type": "date"
+      },
+      {
+        "name": "EventMember.EventLineUps",
+        "refs": [
+          "event line ups of experience member",
+          "experience line ups of event member"
+        ],
+        "type": "collections"
+      }
+    ]
+  },
+  {
+    "name": "EventMember",
+    "refs": ["experience member", "event member"],
+    "cols": [
+      { "name": "Name", "refs": ["name"], "type": "text" },
+      {
+        "name": "CreatedByUserName",
+        "refs": ["created by user name"],
+        "type": "text"
+      },
+      {
+        "name": "ModifiedByUserName",
+        "refs": ["modified by user name"],
+        "type": "text"
+      },
+      { "name": "CreatedOn", "refs": ["created on"], "type": "date" },
+      { "name": "ModifiedOn", "refs": ["modified on"], "type": "date" },
+      {
+        "name": "EventLineUps",
+        "refs": ["event line ups", "experience line ups"],
+        "type": "collections"
+      },
+      {
+        "name": "EventMemberType.Name",
+        "refs": ["name of event member type"],
+        "type": "text"
+      },
+      {
+        "name": "EventMemberType.CreatedByUserName",
+        "refs": ["created by user name of event member type"],
+        "type": "text"
+      },
+      {
+        "name": "EventMemberType.ModifiedByUserName",
+        "refs": ["modified by user name of event member type"],
+        "type": "text"
+      },
+      {
+        "name": "EventMemberType.CreatedOn",
+        "refs": ["created on of event member type"],
+        "type": "date"
+      },
+      {
+        "name": "EventMemberType.ModifiedOn",
+        "refs": ["modified on of event member type"],
+        "type": "date"
+      },
+      {
+        "name": "EventMemberType.EventMembers",
+        "refs": [
+          "event members of event member type",
+          "experience members of experience member type"
+        ],
+        "type": "collections"
+      }
+    ]
+  },
+  {
+    "name": "EventMemberType",
+    "refs": ["event member type", "experience member type"],
+    "cols": [
+      { "name": "Name", "refs": ["name"], "type": "text" },
+      {
+        "name": "CreatedByUserName",
+        "refs": ["created by user name"],
+        "type": "text"
+      },
+      {
+        "name": "ModifiedByUserName",
+        "refs": ["modified by user name"],
+        "type": "text"
+      },
+      { "name": "CreatedOn", "refs": ["created on"], "type": "date" },
+      { "name": "ModifiedOn", "refs": ["modified on"], "type": "date" },
+      {
+        "name": "EventMembers",
+        "refs": ["event members", "experience members"],
+        "type": "collections"
+      }
+    ]
+  },
+  {
+    "name": "EventMetaValue",
+    "refs": ["event meta value", "experience meta value"],
+    "cols": [
+      { "name": "Value", "refs": ["value"], "type": "text" },
+      {
+        "name": "CreatedByUserName",
+        "refs": ["created by user name"],
+        "type": "text"
+      },
+      {
+        "name": "ModifiedByUserName",
+        "refs": ["modified by user name"],
+        "type": "text"
+      },
+      { "name": "CreatedOn", "refs": ["created on"], "type": "date" },
+      { "name": "ModifiedOn", "refs": ["modified on"], "type": "date" },
+      {
+        "name": "Event.IsActive",
+        "refs": ["is visible on site of experience", "is active of event"],
+        "type": "bool"
+      },
+      {
+        "name": "Event.Title",
+        "refs": ["title of experience"],
+        "type": "text"
+      },
+      { "name": "Event.Code", "refs": ["code of experience"], "type": "text" },
+      {
+        "name": "Event.Description",
+        "refs": ["description of experience"],
+        "type": "text"
+      },
+      { "name": "Event.Link", "refs": ["link of experience"], "type": "text" },
+      {
+        "name": "Event.LocationTitle",
+        "refs": ["location title of experience"],
+        "type": "text"
+      },
+      {
+        "name": "Event.CreatedByUserName",
+        "refs": ["created by user name of experience"],
+        "type": "text"
+      },
+      {
+        "name": "Event.ModifiedByUserName",
+        "refs": ["modified by user name of experience"],
+        "type": "text"
+      },
+      {
+        "name": "Event.MinPrice",
+        "refs": [
+          "min price, base currency of experience",
+          "min price of event"
+        ],
+        "type": "number"
+      },
+      {
+        "name": "Event.MaxPrice",
+        "refs": [
+          "max price, base currency of experience",
+          "max price of event"
+        ],
+        "type": "number"
+      },
+      {
+        "name": "Event.LikesCount",
+        "refs": ["likes count of experience"],
+        "type": "number"
+      },
+      {
+        "name": "Event.TotalTicketsCount",
+        "refs": ["total tickets count of experience"],
+        "type": "number"
+      },
+      {
+        "name": "Event.SoldTicketsCount",
+        "refs": ["sold tickets count of experience"],
+        "type": "number"
+      },
+      {
+        "name": "Event.SoldTicketsAmount",
+        "refs": [
+          "sold tickets amount of experience",
+          "sold tickets amount, base currency of event"
+        ],
+        "type": "number"
+      },
+      {
+        "name": "Event.StartDate",
+        "refs": ["start date of experience"],
+        "type": "date"
+      },
+      {
+        "name": "Event.EndDate",
+        "refs": ["end date of experience"],
+        "type": "date"
+      },
+      {
+        "name": "Event.CreatedOn",
+        "refs": ["created on of experience"],
+        "type": "date"
+      },
+      {
+        "name": "Event.ModifiedOn",
+        "refs": ["modified on of experience"],
+        "type": "date"
+      },
+      {
+        "name": "Event.EventImages",
+        "refs": ["experience images of experience", "event images of event"],
+        "type": "collections"
+      },
+      {
+        "name": "Event.EventInCategories",
+        "refs": [
+          "experience in categories of experience",
+          "event in categories of event"
+        ],
+        "type": "collections"
+      },
+      {
+        "name": "Event.EventFlags",
+        "refs": ["event flags of experience", "experience flags of event"],
+        "type": "collections"
+      },
+      {
+        "name": "Event.FavouriteEvents",
+        "refs": ["favourite events of experience"],
+        "type": "collections"
+      },
+      {
+        "name": "Event.EventReviews",
+        "refs": ["event reviews of experience", "experience reviews of event"],
+        "type": "collections"
+      },
+      {
+        "name": "Event.EventMetaValues",
+        "refs": [
+          "event meta values of experience",
+          "experience meta values of event"
+        ],
+        "type": "collections"
+      },
+      {
+        "name": "Event.Dates",
+        "refs": ["dates of experience"],
+        "type": "collections"
+      },
+      { "name": "MetaKey.Name", "refs": ["name of meta key"], "type": "text" },
+      {
+        "name": "MetaKey.CreatedByUserName",
+        "refs": ["created by user name of meta key"],
+        "type": "text"
+      },
+      {
+        "name": "MetaKey.ModifiedByUserName",
+        "refs": ["modified by user name of meta key"],
+        "type": "text"
+      },
+      {
+        "name": "MetaKey.CreatedOn",
+        "refs": ["created on of meta key"],
+        "type": "date"
+      },
+      {
+        "name": "MetaKey.ModifiedOn",
+        "refs": ["modified on of meta key"],
+        "type": "date"
+      },
+      {
+        "name": "MetaKey.PageMetaValues",
+        "refs": ["page meta values of meta key"],
+        "type": "collections"
+      }
+    ]
+  },
+  {
+    "name": "EventPlace",
+    "refs": ["event place", "experience place"],
+    "cols": [
+      {
+        "name": "IsFeesAbsorbed",
+        "refs": [
+          "absorb fees: fees are deducted from your hucket revenue",
+          "is fees absorbed"
+        ],
+        "type": "bool"
+      },
+      { "name": "Title", "refs": ["title"], "type": "text" },
+      {
+        "name": "CreatedByUserName",
+        "refs": ["created by user name"],
+        "type": "text"
+      },
+      {
+        "name": "ModifiedByUserName",
+        "refs": ["modified by user name"],
+        "type": "text"
+      },
+      {
+        "name": "Quota",
+        "refs": ["amount of tickets available", "quota"],
+        "type": "number"
+      },
+      {
+        "name": "Price",
+        "refs": ["price", "price, base currency"],
+        "type": "number"
+      },
+      {
+        "name": "NotAvailableTicketsCount",
+        "refs": ["not available tickets count"],
+        "type": "number"
+      },
+      {
+        "name": "SalesStartDate",
+        "refs": ["sales start date"],
+        "type": "date"
+      },
+      { "name": "SalesEndDate", "refs": ["sales end date"], "type": "date" },
+      { "name": "CreatedOn", "refs": ["created on"], "type": "date" },
+      { "name": "ModifiedOn", "refs": ["modified on"], "type": "date" },
+      { "name": "Tickets", "refs": ["tickets"], "type": "collections" },
+      {
+        "name": "TicketType.Title",
+        "refs": ["title of ticket type"],
+        "type": "text"
+      },
+      {
+        "name": "TicketType.CreatedByUserName",
+        "refs": ["created by user name of ticket type"],
+        "type": "text"
+      },
+      {
+        "name": "TicketType.ModifiedByUserName",
+        "refs": ["modified by user name of ticket type"],
+        "type": "text"
+      },
+      {
+        "name": "TicketType.CreatedOn",
+        "refs": ["created on of ticket type"],
+        "type": "date"
+      },
+      {
+        "name": "TicketType.ModifiedOn",
+        "refs": ["modified on of ticket type"],
+        "type": "date"
+      },
+      {
+        "name": "TicketType.Tickets",
+        "refs": ["tickets of ticket type", "huckets of hucket type"],
+        "type": "collections"
+      },
+      {
+        "name": "TicketType.EventPlaces",
+        "refs": ["event places of ticket type"],
+        "type": "collections"
+      },
+      {
+        "name": "Date.CreatedByUserName",
+        "refs": ["created by user name of event date"],
+        "type": "text"
+      },
+      {
+        "name": "Date.ModifiedByUserName",
+        "refs": ["modified by user name of event date"],
+        "type": "text"
+      },
+      {
+        "name": "Date.StartDate",
+        "refs": ["start date of event date"],
+        "type": "date"
+      },
+      {
+        "name": "Date.EndDate",
+        "refs": ["end date of event date"],
+        "type": "date"
+      },
+      {
+        "name": "Date.CreatedOn",
+        "refs": ["created on of event date"],
+        "type": "date"
+      },
+      {
+        "name": "Date.ModifiedOn",
+        "refs": ["modified on of event date"],
+        "type": "date"
+      },
+      {
+        "name": "Date.EventPlaces",
+        "refs": [
+          "event places of event date",
+          "experience places of experience date"
+        ],
+        "type": "collections"
+      },
+      {
+        "name": "Date.LineUps",
+        "refs": ["line ups of event date"],
+        "type": "collections"
+      }
+    ]
+  },
+  {
+    "name": "EventReview",
+    "refs": ["experience review", "event review"],
+    "cols": [
+      { "name": "Body", "refs": ["body"], "type": "text" },
+      {
+        "name": "CreatedByUserName",
+        "refs": ["created by user name"],
+        "type": "text"
+      },
+      {
+        "name": "ModifiedByUserName",
+        "refs": ["modified by user name"],
+        "type": "text"
+      },
+      { "name": "Rating", "refs": ["rating"], "type": "number" },
+      { "name": "CreatedOn", "refs": ["created on"], "type": "date" },
+      { "name": "ModifiedOn", "refs": ["modified on"], "type": "date" },
+      {
+        "name": "Event.IsActive",
+        "refs": ["is visible on site of experience", "is active of event"],
+        "type": "bool"
+      },
+      {
+        "name": "Event.Title",
+        "refs": ["title of experience"],
+        "type": "text"
+      },
+      { "name": "Event.Code", "refs": ["code of experience"], "type": "text" },
+      {
+        "name": "Event.Description",
+        "refs": ["description of experience"],
+        "type": "text"
+      },
+      { "name": "Event.Link", "refs": ["link of experience"], "type": "text" },
+      {
+        "name": "Event.LocationTitle",
+        "refs": ["location title of experience"],
+        "type": "text"
+      },
+      {
+        "name": "Event.CreatedByUserName",
+        "refs": ["created by user name of experience"],
+        "type": "text"
+      },
+      {
+        "name": "Event.ModifiedByUserName",
+        "refs": ["modified by user name of experience"],
+        "type": "text"
+      },
+      {
+        "name": "Event.MinPrice",
+        "refs": [
+          "min price, base currency of experience",
+          "min price of event"
+        ],
+        "type": "number"
+      },
+      {
+        "name": "Event.MaxPrice",
+        "refs": [
+          "max price, base currency of experience",
+          "max price of event"
+        ],
+        "type": "number"
+      },
+      {
+        "name": "Event.LikesCount",
+        "refs": ["likes count of experience"],
+        "type": "number"
+      },
+      {
+        "name": "Event.TotalTicketsCount",
+        "refs": ["total tickets count of experience"],
+        "type": "number"
+      },
+      {
+        "name": "Event.SoldTicketsCount",
+        "refs": ["sold tickets count of experience"],
+        "type": "number"
+      },
+      {
+        "name": "Event.SoldTicketsAmount",
+        "refs": [
+          "sold tickets amount of experience",
+          "sold tickets amount, base currency of event"
+        ],
+        "type": "number"
+      },
+      {
+        "name": "Event.StartDate",
+        "refs": ["start date of experience"],
+        "type": "date"
+      },
+      {
+        "name": "Event.EndDate",
+        "refs": ["end date of experience"],
+        "type": "date"
+      },
+      {
+        "name": "Event.CreatedOn",
+        "refs": ["created on of experience"],
+        "type": "date"
+      },
+      {
+        "name": "Event.ModifiedOn",
+        "refs": ["modified on of experience"],
+        "type": "date"
+      },
+      {
+        "name": "Event.EventImages",
+        "refs": ["experience images of experience", "event images of event"],
+        "type": "collections"
+      },
+      {
+        "name": "Event.EventInCategories",
+        "refs": [
+          "experience in categories of experience",
+          "event in categories of event"
+        ],
+        "type": "collections"
+      },
+      {
+        "name": "Event.EventFlags",
+        "refs": ["event flags of experience", "experience flags of event"],
+        "type": "collections"
+      },
+      {
+        "name": "Event.FavouriteEvents",
+        "refs": ["favourite events of experience"],
+        "type": "collections"
+      },
+      {
+        "name": "Event.EventReviews",
+        "refs": ["event reviews of experience", "experience reviews of event"],
+        "type": "collections"
+      },
+      {
+        "name": "Event.EventMetaValues",
+        "refs": [
+          "event meta values of experience",
+          "experience meta values of event"
+        ],
+        "type": "collections"
+      },
+      {
+        "name": "Event.Dates",
+        "refs": ["dates of experience"],
+        "type": "collections"
+      }
+    ]
+  },
+  {
+    "name": "EventTag",
+    "refs": ["event tag", "experience tag"],
+    "cols": [
+      {
+        "name": "CreatedByUserName",
+        "refs": ["created by user name"],
+        "type": "text"
+      },
+      {
+        "name": "ModifiedByUserName",
+        "refs": ["modified by user name"],
+        "type": "text"
+      },
+      { "name": "CreatedOn", "refs": ["created on"], "type": "date" },
+      { "name": "ModifiedOn", "refs": ["modified on"], "type": "date" },
+      {
+        "name": "Event.IsActive",
+        "refs": ["is visible on site of experience", "is active of event"],
+        "type": "bool"
+      },
+      {
+        "name": "Event.Title",
+        "refs": ["title of experience"],
+        "type": "text"
+      },
+      { "name": "Event.Code", "refs": ["code of experience"], "type": "text" },
+      {
+        "name": "Event.Description",
+        "refs": ["description of experience"],
+        "type": "text"
+      },
+      { "name": "Event.Link", "refs": ["link of experience"], "type": "text" },
+      {
+        "name": "Event.LocationTitle",
+        "refs": ["location title of experience"],
+        "type": "text"
+      },
+      {
+        "name": "Event.CreatedByUserName",
+        "refs": ["created by user name of experience"],
+        "type": "text"
+      },
+      {
+        "name": "Event.ModifiedByUserName",
+        "refs": ["modified by user name of experience"],
+        "type": "text"
+      },
+      {
+        "name": "Event.MinPrice",
+        "refs": [
+          "min price, base currency of experience",
+          "min price of event"
+        ],
+        "type": "number"
+      },
+      {
+        "name": "Event.MaxPrice",
+        "refs": [
+          "max price, base currency of experience",
+          "max price of event"
+        ],
+        "type": "number"
+      },
+      {
+        "name": "Event.LikesCount",
+        "refs": ["likes count of experience"],
+        "type": "number"
+      },
+      {
+        "name": "Event.TotalTicketsCount",
+        "refs": ["total tickets count of experience"],
+        "type": "number"
+      },
+      {
+        "name": "Event.SoldTicketsCount",
+        "refs": ["sold tickets count of experience"],
+        "type": "number"
+      },
+      {
+        "name": "Event.SoldTicketsAmount",
+        "refs": [
+          "sold tickets amount of experience",
+          "sold tickets amount, base currency of event"
+        ],
+        "type": "number"
+      },
+      {
+        "name": "Event.StartDate",
+        "refs": ["start date of experience"],
+        "type": "date"
+      },
+      {
+        "name": "Event.EndDate",
+        "refs": ["end date of experience"],
+        "type": "date"
+      },
+      {
+        "name": "Event.CreatedOn",
+        "refs": ["created on of experience"],
+        "type": "date"
+      },
+      {
+        "name": "Event.ModifiedOn",
+        "refs": ["modified on of experience"],
+        "type": "date"
+      },
+      {
+        "name": "Event.EventImages",
+        "refs": ["experience images of experience", "event images of event"],
+        "type": "collections"
+      },
+      {
+        "name": "Event.EventInCategories",
+        "refs": [
+          "experience in categories of experience",
+          "event in categories of event"
+        ],
+        "type": "collections"
+      },
+      {
+        "name": "Event.EventFlags",
+        "refs": ["event flags of experience", "experience flags of event"],
+        "type": "collections"
+      },
+      {
+        "name": "Event.FavouriteEvents",
+        "refs": ["favourite events of experience"],
+        "type": "collections"
+      },
+      {
+        "name": "Event.EventReviews",
+        "refs": ["event reviews of experience", "experience reviews of event"],
+        "type": "collections"
+      },
+      {
+        "name": "Event.EventMetaValues",
+        "refs": [
+          "event meta values of experience",
+          "experience meta values of event"
+        ],
+        "type": "collections"
+      },
+      {
+        "name": "Event.Dates",
+        "refs": ["dates of experience"],
+        "type": "collections"
+      },
+      { "name": "Tag.Name", "refs": ["name of tag"], "type": "text" },
+      {
+        "name": "Tag.CreatedByUserName",
+        "refs": ["created by user name of tag"],
+        "type": "text"
+      },
+      {
+        "name": "Tag.ModifiedByUserName",
+        "refs": ["modified by user name of tag"],
+        "type": "text"
+      },
+      {
+        "name": "Tag.CreatedOn",
+        "refs": ["created on of tag"],
+        "type": "date"
+      },
+      {
+        "name": "Tag.ModifiedOn",
+        "refs": ["modified on of tag"],
+        "type": "date"
+      },
+      {
+        "name": "Tag.EventTags",
+        "refs": ["experience tags of tag"],
+        "type": "collections"
+      }
+    ]
+  },
+  {
+    "name": "FavouriteEvent",
+    "refs": ["favourite event"],
+    "cols": [
+      {
+        "name": "EventLink",
+        "refs": ["link to website", "event link"],
+        "type": "text"
+      },
+      {
+        "name": "EventTitle",
+        "refs": ["experience title", "event title"],
+        "type": "text"
+      },
+      {
+        "name": "CreatedByUserName",
+        "refs": ["created by user name"],
+        "type": "text"
+      },
+      {
+        "name": "ModifiedByUserName",
+        "refs": ["modified by user name"],
+        "type": "text"
+      },
+      { "name": "CreatedOn", "refs": ["created on"], "type": "date" },
+      { "name": "ModifiedOn", "refs": ["modified on"], "type": "date" },
+      {
+        "name": "Event.IsActive",
+        "refs": ["is visible on site of experience", "is active of event"],
+        "type": "bool"
+      },
+      {
+        "name": "Event.Title",
+        "refs": ["title of experience"],
+        "type": "text"
+      },
+      { "name": "Event.Code", "refs": ["code of experience"], "type": "text" },
+      {
+        "name": "Event.Description",
+        "refs": ["description of experience"],
+        "type": "text"
+      },
+      { "name": "Event.Link", "refs": ["link of experience"], "type": "text" },
+      {
+        "name": "Event.LocationTitle",
+        "refs": ["location title of experience"],
+        "type": "text"
+      },
+      {
+        "name": "Event.CreatedByUserName",
+        "refs": ["created by user name of experience"],
+        "type": "text"
+      },
+      {
+        "name": "Event.ModifiedByUserName",
+        "refs": ["modified by user name of experience"],
+        "type": "text"
+      },
+      {
+        "name": "Event.MinPrice",
+        "refs": [
+          "min price, base currency of experience",
+          "min price of event"
+        ],
+        "type": "number"
+      },
+      {
+        "name": "Event.MaxPrice",
+        "refs": [
+          "max price, base currency of experience",
+          "max price of event"
+        ],
+        "type": "number"
+      },
+      {
+        "name": "Event.LikesCount",
+        "refs": ["likes count of experience"],
+        "type": "number"
+      },
+      {
+        "name": "Event.TotalTicketsCount",
+        "refs": ["total tickets count of experience"],
+        "type": "number"
+      },
+      {
+        "name": "Event.SoldTicketsCount",
+        "refs": ["sold tickets count of experience"],
+        "type": "number"
+      },
+      {
+        "name": "Event.SoldTicketsAmount",
+        "refs": [
+          "sold tickets amount of experience",
+          "sold tickets amount, base currency of event"
+        ],
+        "type": "number"
+      },
+      {
+        "name": "Event.StartDate",
+        "refs": ["start date of experience"],
+        "type": "date"
+      },
+      {
+        "name": "Event.EndDate",
+        "refs": ["end date of experience"],
+        "type": "date"
+      },
+      {
+        "name": "Event.CreatedOn",
+        "refs": ["created on of experience"],
+        "type": "date"
+      },
+      {
+        "name": "Event.ModifiedOn",
+        "refs": ["modified on of experience"],
+        "type": "date"
+      },
+      {
+        "name": "Event.EventImages",
+        "refs": ["experience images of experience", "event images of event"],
+        "type": "collections"
+      },
+      {
+        "name": "Event.EventInCategories",
+        "refs": [
+          "experience in categories of experience",
+          "event in categories of event"
+        ],
+        "type": "collections"
+      },
+      {
+        "name": "Event.EventFlags",
+        "refs": ["event flags of experience", "experience flags of event"],
+        "type": "collections"
+      },
+      {
+        "name": "Event.FavouriteEvents",
+        "refs": ["favourite events of experience"],
+        "type": "collections"
+      },
+      {
+        "name": "Event.EventReviews",
+        "refs": ["event reviews of experience", "experience reviews of event"],
+        "type": "collections"
+      },
+      {
+        "name": "Event.EventMetaValues",
+        "refs": [
+          "event meta values of experience",
+          "experience meta values of event"
+        ],
+        "type": "collections"
+      },
+      {
+        "name": "Event.Dates",
+        "refs": ["dates of experience"],
+        "type": "collections"
+      }
+    ]
+  },
+  {
+    "name": "Tag",
+    "refs": ["tag"],
+    "cols": [
+      { "name": "Name", "refs": ["name"], "type": "text" },
+      {
+        "name": "CreatedByUserName",
+        "refs": ["created by user name"],
+        "type": "text"
+      },
+      {
+        "name": "ModifiedByUserName",
+        "refs": ["modified by user name"],
+        "type": "text"
+      },
+      { "name": "CreatedOn", "refs": ["created on"], "type": "date" },
+      { "name": "ModifiedOn", "refs": ["modified on"], "type": "date" },
+      {
+        "name": "EventTags",
+        "refs": ["experience tags", "event tags"],
+        "type": "collections"
+      }
+    ]
+  },
+  {
+    "name": "Contact",
+    "refs": ["contact"],
+    "cols": [
+      { "name": "FirstName", "refs": ["first name"], "type": "text" },
+      { "name": "LastName", "refs": ["last name"], "type": "text" },
+      { "name": "PhoneNumber", "refs": ["phone number"], "type": "text" },
+      { "name": "Email", "refs": ["email"], "type": "text" },
+      {
+        "name": "CreatedByUserName",
+        "refs": ["created by user name"],
+        "type": "text"
+      },
+      {
+        "name": "ModifiedByUserName",
+        "refs": ["modified by user name"],
+        "type": "text"
+      },
+      { "name": "CreatedOn", "refs": ["created on"], "type": "date" },
+      { "name": "ModifiedOn", "refs": ["modified on"], "type": "date" },
+      { "name": "Organisers", "refs": ["organisers"], "type": "collections" },
+      { "name": "Orders", "refs": ["orders"], "type": "collections" }
+    ]
+  },
+  {
+    "name": "Currency",
+    "refs": ["currency"],
+    "cols": [
+      { "name": "Code", "refs": ["code"], "type": "text" },
+      { "name": "Name", "refs": ["name"], "type": "text" },
+      { "name": "Symbol", "refs": ["symbol"], "type": "text" },
+      {
+        "name": "CreatedByUserName",
+        "refs": ["createdbyusernamecaption", "created by user name"],
+        "type": "text"
+      },
+      {
+        "name": "ModifiedByUserName",
+        "refs": ["modifiedbyusernamecaption", "modified by user name"],
+        "type": "text"
+      },
+      {
+        "name": "ExchangeRate",
+        "refs": ["exchange rate", "exchangerate"],
+        "type": "number"
+      },
+      {
+        "name": "CreatedOn",
+        "refs": ["createdoncaption", "created on"],
+        "type": "date"
+      },
+      {
+        "name": "ModifiedOn",
+        "refs": ["modified on", "modifiedoncaption"],
+        "type": "date"
+      }
+    ]
+  },
+  {
+    "name": "Language",
+    "refs": ["language"],
+    "cols": [
+      { "name": "Name", "refs": ["name"], "type": "text" },
+      { "name": "Code", "refs": ["code"], "type": "text" },
+      {
+        "name": "CreatedByUserName",
+        "refs": ["createdbyusernamecaption", "created by user name"],
+        "type": "text"
+      },
+      {
+        "name": "ModifiedByUserName",
+        "refs": ["modifiedbyusernamecaption", "modified by user name"],
+        "type": "text"
+      },
+      {
+        "name": "CreatedOn",
+        "refs": ["createdoncaption", "created on"],
+        "type": "date"
+      },
+      {
+        "name": "ModifiedOn",
+        "refs": ["modified on", "modifiedoncaption"],
+        "type": "date"
+      }
+    ]
+  },
+  {
+    "name": "MultiCurrencyAmount",
+    "refs": ["multicurrencyamount", "multi currency amount"],
+    "cols": [
+      {
+        "name": "CreatedByUserName",
+        "refs": ["createdbyusernamecaption", "created by user name"],
+        "type": "text"
+      },
+      {
+        "name": "ModifiedByUserName",
+        "refs": ["modifiedbyusernamecaption", "modified by user name"],
+        "type": "text"
+      },
+      {
+        "name": "BaseCurrencyAmount",
+        "refs": ["basecurrencyamount", "base currency amount"],
+        "type": "number"
+      },
+      { "name": "Amount", "refs": ["amount"], "type": "number" },
+      {
+        "name": "CreatedOn",
+        "refs": ["createdoncaption", "created on"],
+        "type": "date"
+      },
+      {
+        "name": "ModifiedOn",
+        "refs": ["modified on", "modifiedoncaption"],
+        "type": "date"
+      },
+      { "name": "Currency.Code", "refs": ["code of currency"], "type": "text" },
+      { "name": "Currency.Name", "refs": ["name of currency"], "type": "text" },
+      {
+        "name": "Currency.Symbol",
+        "refs": ["symbol of currency"],
+        "type": "text"
+      },
+      {
+        "name": "Currency.CreatedByUserName",
+        "refs": ["createdbyusernamecaption of currency"],
+        "type": "text"
+      },
+      {
+        "name": "Currency.ModifiedByUserName",
+        "refs": ["modifiedbyusernamecaption of currency"],
+        "type": "text"
+      },
+      {
+        "name": "Currency.ExchangeRate",
+        "refs": ["exchange rate of currency"],
+        "type": "number"
+      },
+      {
+        "name": "Currency.CreatedOn",
+        "refs": ["createdoncaption of currency"],
+        "type": "date"
+      },
+      {
+        "name": "Currency.ModifiedOn",
+        "refs": ["modified on of currency"],
+        "type": "date"
+      }
+    ]
+  }
+]

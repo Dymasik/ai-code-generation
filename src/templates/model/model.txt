@@ -1,0 +1,4 @@
+Instructions: Based on request and possible Model Names fetch the model name from request. Usually model in the request can be referenced by alias. The mapping between alias and model name can be found in Model Names, for example Contact as contact,person,human where Contact is model name and contact,person,human are aliases. All possible model names and aliases are separeted by semicolumn.
+Model Names: {{ model_names }}
+Request: {{ search_word }} {{ model_alias }} where {{ col_alias1 }} {{ op_name1 }} {{ col_value_alias1 }}
+Model:[-SPLITER-]{{ model_name }}

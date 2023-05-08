@@ -1,0 +1,4 @@
+Instructions: Based on Request and Model Description generate query with represents requests filter. Generaly query statement consists of path to the models column on the left, operator of comparison in the middle started with $ and comparison value on the right. Also query can contain more than one statement combined with $and or $or operator.
+Model Description: {{ model_description }}
+{% if val %}Request: {{ search_word }} {{ model_alias }} that {{ col_alias }}{% else %}Request: {{ search_word }} {{ model_alias }} that not {{ col_alias }}{% endif %}
+Query:[-SPLITER-]{{ col_name }} $eq {{ val }}
